@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>National Skill Development Corporation (NSDC)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="top-bar">
+      <span>Helpline</span>
+      <span>COVID Support</span>
+      <span>Careers</span>
+      <span>Tenders</span>
+    </div>
+    <nav class="navbar">
+      <div class="logo">NSDC</div>
+      <ul class="nav-links">
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="#">What We Do</a></li>
+        <li><a href="#">Schemes</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="verify-section">
+  <h2>Certificate Verification</h2>
+  <p>Enter your Certificate Number to verify:</p>
+  <input type="text" id="certInput" placeholder="e.g., NSDC2025001234">
+  <button id="verifyBtn">Verify Certificate</button>
+  <div id="verificationResult"></div>
+<img id="certificateImage" src="" alt="Certificate Image" style="display:none; max-width:100%; margin-top:20px; border:2px solid #ccc; border-radius:8px;">
+
+  
+</section>
+
+
+  <section class="hero">
+    <h1>National Skill Development Corporation</h1>
+    <p>Empowering youth through skill development</p>
+    <a href="#" class="btn">Explore Programs</a>
+  </section>
+
+  <section class="highlights">
+    <div class="highlight">
+      <h3>Find a Training Centre</h3>
+      <p>Locate NSDC-approved centers across India.</p>
+    </div>
+    <div class="highlight">
+      <h3>Standards & Quality</h3>
+      <p>Assuring industry-relevant skill training.</p>
+    </div>
+    <div class="highlight">
+      <h3>Skill Impact Bond</h3>
+      <p>Innovative financing model to boost skills.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NSDC. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">YouTube</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+
+  <!-- Your other HTML content above -->
+
+<script>
+  document.getElementById("verifyBtn").addEventListener("click", function () {
+    const input = document.getElementById("certInput").value.trim();
+    const result = document.getElementById("verificationResult");
+    const certImg = document.getElementById("certificateImage");
+
+    const certMap = {
+      "NSDC2025008365": "images/NSDC2025008365.jpg",
+      "NSDC2025001235": "NSDC2025001235.jpg",
+      "NSDC2025001236": "NSDC2025001236.jpg"
+    };
+
+    if (certMap[input]) {
+      result.style.color = "green";
+      result.textContent = "✅ Certificate is valid!";
+      certImg.src = certMap[input];
+      certImg.style.display = "block";
+    } else {
+      result.style.color = "red";
+      result.textContent = "❌ Invalid certificate number!";
+      certImg.style.display = "none";
+    }
+  });
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,121 @@
+body {
+    
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.top-bar {
+  background-color: #004080;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0066cc;
+  padding: 10px 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: linear-gradient(to right, #0066cc, #3399ff);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero .btn {
+  background-color: white;
+  color: #0066cc;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.highlights {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #f2f2f2;
+}
+
+.highlight {
+  max-width: 300px;
+  text-align: center;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.verify-section {
+  background-color: #e6f2ff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.verify-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+.verify-section input[type="text"] {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.verify-section button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.verify-section button:hover {
+  background-color: #004080;
+}
+
+#verificationResult {
+  margin-top: 20px;
+  font-weight: bold;
+}
